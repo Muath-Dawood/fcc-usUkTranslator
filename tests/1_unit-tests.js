@@ -91,18 +91,18 @@ suite('Unit Tests', () => {
 
   // Highlight translation tests
   test('Highlight translation in Mangoes are my favorite fruit.', () => {
-    assert.equal(translator.translate('Mangoes are my favorite fruit.', 'american-to-british').highlighted, 'Mangoes are my <span class="highlighted">favourite</span> fruit.');
+    assert.equal(translator.translate('Mangoes are my favorite fruit.', 'american-to-british').highlighted, 'Mangoes are my <span class="highlight">favourite</span> fruit.');
   });
 
   test('Highlight translation in I ate yogurt for breakfast.', () => {
-    assert.equal(translator.translate('I ate yogurt for breakfast.', 'american-to-british').highlighted, 'I ate <span class="highlighted">yoghurt</span> for breakfast.');
+    assert.equal(translator.translate('I ate yogurt for breakfast.', 'american-to-british').highlighted, 'I ate <span class="highlight">yoghurt</span> for breakfast.');
   });
 
   test('Highlight translation in We watched the footie match for a while.', () => {
-    assert.equal(translator.translate('We watched the footie match for a while.', 'british-to-american').highlighted, 'We watched the <span class="highlighted">soccer</span> match for a while.');
+    assert.equal(translator.translate('We watched the footie match for a while.', 'british-to-american').highlighted, 'We watched the <span class="highlight">soccer</span> match for a while.');
   });
 
   test('Highlight translation in Paracetamol takes up to an hour to work.', () => {
-    assert.equal(translator.translate('Paracetamol takes up to an hour to work.', 'british-to-american').highlighted, '<span class="highlighted">Acetaminophen</span> takes up to an hour to work.');
+    assert.equal(translator.translate('Paracetamol takes up to an hour to work.', 'british-to-american').highlighted, '<span class="highlight">Acetaminophen</span> takes up to an hour to work.');
   });
 });
